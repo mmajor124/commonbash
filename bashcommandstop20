@@ -109,3 +109,104 @@ echo
 # 20. `exit` - Exit the script
 echo "Exiting the script."
 exit 0
+
+---------------------------------------------------------------------------------------------------
+
+Here’s a list of the top 20 most commonly used and important bash commands that are essential for beginners, along with the top 3 flags for each that a DevOps engineer might typically use:
+
+### 1. **`ls`** - Lists directory contents
+   - `-l` : Long listing format
+   - `-a` : Show all files, including hidden ones
+   - `-h` : Human-readable file sizes
+
+### 2. **`cd`** - Changes the current directory
+   - `~` : Home directory
+   - `..` : Parent directory
+   - `-` : Previous directory
+
+### 3. **`pwd`** - Prints the working directory
+
+### 4. **`cp`** - Copies files and directories
+   - `-r` : Recursive copy (for directories)
+   - `-i` : Prompt before overwrite
+   - `-v` : Verbose mode
+
+### 5. **`mv`** - Moves or renames files and directories
+   - `-i` : Prompt before overwrite
+   - `-v` : Verbose mode
+   - `-n` : No clobber, don’t overwrite existing files
+
+### 6. **`rm`** - Removes files or directories
+   - `-r` : Recursive removal (for directories)
+   - `-i` : Prompt before removal
+   - `-f` : Force removal
+
+### 7. **`mkdir`** - Creates directories
+   - `-p` : Create parent directories as needed
+   - `-v` : Verbose mode
+
+### 8. **`rmdir`** - Removes empty directories
+   - `--ignore-fail-on-non-empty` : Ignore errors when directory is not empty
+   - `-p` : Remove directories and their parents
+
+### 9. **`touch`** - Creates or updates file timestamps
+   - `-a` : Change only access time
+   - `-m` : Change only modification time
+   - `-c` : Do not create any files
+
+### 10. **`echo`** - Displays a line of text
+   - `-e` : Enable interpretation of backslash escapes
+   - `-n` : Do not output the trailing newline
+   - `-E` : Disable interpretation of backslash escapes
+
+### 11. **`cat`** - Concatenates and displays file content
+   - `-n` : Number all output lines
+   - `-E` : Display `$` at the end of each line
+   - `-s` : Squeeze multiple blank lines
+
+### 12. **`grep`** - Searches text using patterns
+   - `-i` : Ignore case
+   - `-r` : Recursive search
+   - `-v` : Invert match
+
+### 13. **`find`** - Searches for files in a directory hierarchy
+   - `-name` : Search by name
+   - `-type` : Search by type (e.g., `f` for files, `d` for directories)
+   - `-exec` : Execute a command on the found items
+
+### 14. **`chmod`** - Changes file permissions
+   - `-R` : Recursive change
+   - `-v` : Verbose mode
+   - `--reference` : Use file or directory permissions as reference
+
+### 15. **`chown`** - Changes file owner and group
+   - `-R` : Recursive change
+   - `-v` : Verbose mode
+   - `--reference` : Use file or directory ownership as reference
+
+### 16. **`ps`** - Displays information about active processes
+   - `-aux` : Show all processes
+   - `-ef` : Display processes in full-format listing
+   - `-p` : Display processes by PID
+
+### 17. **`kill`** - Sends a signal to a process
+   - `-9` : Force kill
+   - `-l` : List signal names
+   - `-s` : Send specified signal
+
+### 18. **`tar`** - Archives files
+   - `-c` : Create a new archive
+   - `-x` : Extract files from an archive
+   - `-z` : Compress with gzip
+
+### 19. **`ssh`** - Connects to a remote server via SSH
+   - `-i` : Specify identity file
+   - `-p` : Specify port
+   - `-L` : Local port forwarding
+
+### 20. **`df`** - Reports file system disk space usage
+   - `-h` : Human-readable format
+   - `-T` : Show file system type
+   - `-i` : Display inode information
+
+These commands and flags are foundational in Bash and widely used in day-to-day tasks, especially for system administration, DevOps, and development tasks.
