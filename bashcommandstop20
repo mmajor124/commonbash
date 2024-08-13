@@ -1,0 +1,111 @@
+#!/bin/bash
+
+# 1. `ls` - List files and directories in the current directory
+echo "Listing files and directories:"
+ls
+echo
+
+# 2. `cd` - Change to a new directory
+echo "Creating and changing to a new directory 'test_dir':"
+mkdir test_dir
+cd test_dir
+echo "Current directory: $(pwd)"
+echo
+
+# 3. `pwd` - Print the current working directory
+echo "Printing the current directory:"
+pwd
+echo
+
+# 4. `cp` - Copy a file
+echo "Creating a file 'example.txt' and copying it to 'copy_example.txt':"
+echo "This is a test file." > example.txt
+cp example.txt copy_example.txt
+ls
+echo
+
+# 5. `mv` - Move or rename a file
+echo "Renaming 'copy_example.txt' to 'renamed_example.txt':"
+mv copy_example.txt renamed_example.txt
+ls
+echo
+
+# 6. `rm` - Remove a file
+echo "Removing 'renamed_example.txt':"
+rm renamed_example.txt
+ls
+echo
+
+# 7. `mkdir` - Create a new directory
+echo "Creating a subdirectory 'sub_dir':"
+mkdir sub_dir
+ls
+echo
+
+# 8. `rmdir` - Remove an empty directory
+echo "Removing the empty subdirectory 'sub_dir':"
+rmdir sub_dir
+ls
+echo
+
+# 9. `touch` - Create an empty file or update the timestamp of an existing file
+echo "Using 'touch' to create an empty file 'empty_file.txt':"
+touch empty_file.txt
+ls -l empty_file.txt
+echo
+
+# 10. `echo` - Display a line of text
+echo "Displaying a message with 'echo':"
+echo "Hello, Bash!"
+echo
+
+# 11. `cat` - Concatenate and display the content of files
+echo "Displaying the content of 'example.txt':"
+cat example.txt
+echo
+
+# 12. `less` - View the content of a file one screen at a time
+echo "Viewing the content of 'example.txt' with 'less':"
+less example.txt
+echo
+
+# 13. `grep` - Search for patterns within files
+echo "Searching for the word 'test' in 'example.txt':"
+grep "test" example.txt
+echo
+
+# 14. `find` - Search for files and directories in a directory hierarchy
+echo "Finding files in the current directory:"
+find .
+echo
+
+# 15. `chmod` - Change the permissions of a file
+echo "Changing the permissions of 'example.txt' to read-only:"
+chmod 444 example.txt
+ls -l example.txt
+echo
+
+# 16. `chown` - Change the ownership of a file
+echo "Changing ownership of 'example.txt' (root user required):"
+# sudo chown root:root example.txt # Uncomment if running with root privileges
+ls -l example.txt
+echo
+
+# 17. `ps` - Display information about running processes
+echo "Displaying running processes:"
+ps
+echo
+
+# 18. `top` - Display real-time system processes
+echo "Displaying system processes with 'top' (press 'q' to quit):"
+top -n 1
+echo
+
+# 19. `man` - Display the manual page for a command
+echo "Displaying the manual page for the 'ls' command:"
+man ls
+echo
+
+# 20. `exit` - Exit the script
+echo "Exiting the script."
+exit 0
